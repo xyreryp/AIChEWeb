@@ -1,88 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
 
-{% extends "base.html" %}
-{% block content %}
-    <!-- Full Page Image Background Carousel Header -->
-    <header id="myCarousel" class="carousel slide">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
+<head>
 
-        <!-- Wrapper for Slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <!-- Set the first background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('http://wwwtest.ucdavis.edu/local_resources/images/hpbg/2011/november/hpbg_mondavi_ctr.jpg');"></div>
-                <div class="carousel-caption">
-                    <h2>Caption 1</h2>
-                </div>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>AIChE UC Davis</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/static/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="/static/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="/static/css/creative.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='/static/favicon.ico') }}">
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">AIChE UC Davis</a>
             </div>
-            <div class="item">
-                <!-- Set the second background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
-                <div class="carousel-caption">
-                    <h2>Caption 2</h2>
-                </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#programs-and-events">Programs & Events</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#board">Board</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Sponsors</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
-            <div class="item">
-                <!-- Set the third background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
-                <div class="carousel-caption">
-                    <h2>Caption 3</h2>
-                </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading">AIChE UC Davis</h1>
+                <hr class="light">
+                <p>Welcome to the homepage of the UC Davis student chapter of AIChE</p>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
             </div>
         </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
-        </a>
-
     </header>
 
-    <!-- Page Content -->
-    <div class="container">
-
-        <div class="row">
-            <div class="col-lg-12">
-                <h1>Welcome to AICHE at UC Davis!</h1>
-                <p>The background images for the slider are set directly in the HTML using inline CSS. The rest of the styles for this template are contained within the <code>/static/full-slider.css</code>file.</p>
-            </div>
-        </div>
-
-        <hr>
-
-        <!-- Footer -->
-        <footer>
+    <section class="bg-primary" id="about">
+        <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Who We Are</h2>
+                    <hr class="light">
+                    <p class="text-faded">The American Institute of Chemical Engineers (AIChE) is the world’s leading organization for chemical engineering professionals, with more than 40,000 members from 93 countries. AIChE has the breadth of resources and expertise you need, whether you’re in core process industries or in emerging areas, such as nanobiotechnology. As a member, you can access information on recognized and promising chemical engineering processes and methods. A global network of intelligent, resourceful colleagues and their shared wisdom. Learning opportunities from recognized authorities. All of which can help you move forward professionally and enrich the world we live in.</p>
+                    <p class = "text-faded">
+                    Our student chapter represent and support the students affiliated with the UC Davis Department of Chemical Engineering. As a member, you will have access to a variety of programs and events 
+                    that we put on to ensure your success in chemical engineering here in Davis. </p>
+                    
+                    <a href="#programs-and-events" class="page-scroll btn btn-default btn-xl sr-button">Find Out More</a>
                 </div>
             </div>
-            <!-- /.row -->
-        </footer>
+        </div>
+    </section>
 
-    </div>
-    <!-- /.container -->
+    <section id="programs-and-events">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">We've Got You Covered</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                        <div class="col-lg-4 col-md-6 text-center">
+                            <div class="service-box">
+                                <i class="fa fa-4x fa-industry text-primary sr-icons"></i>
+                                <h3>Industry Tours</h3>
+                                <p class="text-muted">We host industries tours to various companies throughout the year. This provides students an amazing opportunity to see what 
+                                chemical engineers do in the work force. Companies that have offered tours in the past include Proctor and Gamble, PepsiCo, Novozymes, and Anheuser Busch!</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 text-center">
+                            <div class="service-box">
+                                <i class="fa fa-4x fa-group text-primary sr-icons"></i>
+                                <h3>Mentorship Program</h3>
+                                <p class="text-muted">Our mentorship program pairs underclassmen and transfer students with upperclassmen mentors and organizes quarterly events (i.e. mentorship dinner,s game nights) that allow mentorship pairs to interact. Mentees can also receive tips regarding classes, resumes, and careers from our mentors.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 text-center">
+                            <div class="service-box">
+                                <i class="fa fa-4x fa-smile-o text-primary sr-icons"></i>
+                                <h3>Student-Faculty Socials</h3>
+                                <p class="text-muted">We plan socials every quarter for students to interact with professors. This is a great way for students to network with professors. Events that we have held in the past include Lunch with Professors, Iron Chef Competition (cook with a professor and get your dish judged), and Kronecker Delta Golf Tournament.   </p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="row">
+                        <div class="col-lg-4 col-md-6 text-center">
+                            <div class="service-box">
+                                <i class="fa fa-4x fa-flask text-primary sr-icons"></i>
+                                <h3>Chem-E-Car</h3>
+                                <p class="text-muted">Chem-E-Car is a design competition where students build a shoe-box sized car powered purely by a chemical reaction. In competition the car must carry a certain weight and travel then stop as close to a certain distance as possible. Anyone is welcome to join! Please visit our <a href="https://www.facebook.com/UCDavisChemECar/?fref=ts" target="_blank">Facebook Page</a> to get the latest news and view photos of our events, past and present! </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 text-center">
+                            <div class="service-box">
+                                <i class="fa fa-4x fa-graduation-cap text-primary sr-icons"></i>
+                                <h3>Professional Development Workshops</h3>
+                                <p class="text-muted">We offer many professional development opportunities for our members. For those interested in industry, we put on company info sessions and interview workshops. Also, annually there is a company dinner and career fair called Night With Industry. For those interested in acadamia, we put on info sessions on how to get a research position. </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 text-center">
+                            <div class="service-box">
+                                <i class="fa fa-4x fa-arrow-circle-right text-primary sr-icons"></i>
+                                <h3>Student Outreach Programs</h3>
+                                <p class="text-muted">Every quarter we host events where we reach out to others about AIChE and chemical engineering. Every year, we have an Engineering Week where other engineers get an opportunity to learn about AIChE. In addition, every quarter we have events where our members travel to elementary schools to give science demonstrations and promote STEM.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+
+                        <div class="col-lg-12 text-center">
+                            <h3>Calendar of Events</h3>
+                            <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%233366ff&amp;ctz=America%2FLos_Angeles" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+   <section class="bg-primary" id="board">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Our Officers</h2>
+                    <hr class="light">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+        {% for officer in officers %}
+            {% if loop.index > 1 %}
+            {% if loop.index -1 % 4 == 0 %}
+             <div class="row">
+             {% endif %}
+             {% endif %}
+                <div class="col-lg-3 col-md-6 text-center">
+                    <img class="circular" src="/static/img/officers/{{ officer.source }}"> 
+                    <p class="text-faded">{{ officer.name }}<br>{{ officer.position }}<br>
+                   <a href="mailto:jfchao@ucdavis.edu" class="text-faded-link">{{ officer.email }} </a></p>
+                </div>
+            {% if loop.index > 1 %}
+            {% if loop.index -1 % 4 == 0 %}
+            </div>
+            {% endif %}
+            {% endif %}
+        {% endfor %}
+        </div>
+    </section>
+
+
+
+    <section id="portfolio">
+    <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">We'd like to thank our sponsors!</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <a href="http://www.chevron.com" target="_blank"><img src="/static/img/sponsors/Chevron.png"></a>
+                    <a href="http://www.phillips66.com" target="_blank"><img src="/static/img/sponsors/Phillips-66.png"></a>
+                </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <a href="http://www.genentech.com" target="_blank"><img src="/static/img/sponsors/Genentech.png"></a>
+                    <a href="http://www.pg.com" target="_blank"><img src="/static/img/sponsors/Proctor-Gamble.png"></a>
+                </div>    
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <a href="http://www.banksintegration.com" target="_blank"><img src="/static/img/sponsors/Banks-Integration.png"></a>
+                    <a href="http://www.gallo.com" target="_blank"><img src="/static/img/sponsors/EJ-Gallo-Winery.png"></a>
+                    <a href="http://www.hilmarcheese.com" target="_blank"><img src="/static/img/sponsors/Hilmar-Cheese.png"></a>
+                </div>    
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <a href="http://www.micromidas.com" target="_blank"><img src="/static/img/sponsors/Micromidas.png"></a>
+                    <a href="http://www.novozymes.com" target="_blank"><img src="/static/img/sponsors/Novozymes.png"></a>
+                    <a href="http://www.monsanto.com" target="_blank"><img src="/static/img/sponsors/Monsanto.png"></a>
+                </div>    
+            </div>
+        </div>
+    </section>
+
+
+    <section class="bg-primary" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Contact us!</h2>
+                    <hr class="light">
+                    <p>Feel free to e-mail any of our officers with questions. Also, don't forget to like us on Facebook and follow us on Instagram!</p>
+                </div>
+                <div class="col-lg-6 col-lg-offset-3 text-center">
+                    <a href="https://www.facebook.com/ucd.aiche/?fref=ts" target="_blank" class="text-faded-link"><i class="fa fa-facebook-square fa-3x sr-contact"></i></a>
+                    <a href="https://www.instagram.com/aiche_ucd/?hl=en" target="_blank" class="text-faded-link"><i class="fa fa-instagram fa-3x sr-contact"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
 
     <!-- jQuery -->
-    <script src="/static/js/jquery.js"></script>
+    <script src="/static/vendor/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/vendor/bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- Script to Activate the Carousel -->
-    <script>
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
-    </script>
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="/static/vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="/static/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
-{% endblock %}
+    <!-- Theme JavaScript -->
+    <script src="/static/js/creative.min.js"></script>
 
+</body>
 
+</html>
