@@ -179,7 +179,7 @@
                 <div class="col-lg-3 col-md-6 text-center">
                     <img class="circular" src="/static/img/officers/{{ officer.source }}"> 
                     <p class="text-faded">{{ officer.name }}<br>{{ officer.position }}<br>
-                   <a href="mailto:jfchao@ucdavis.edu" class="text-faded-link">{{ officer.email }} </a></p>
+                   <a href="mailto: @{{ officer.email }}"  class="text-faded-link">{{ officer.email }} </a></p>
                 </div>
             {% if loop.index > 1 %}
             {% if loop.index -1 % 4 == 0 %}
